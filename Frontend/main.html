@@ -1,0 +1,428 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- Hero -->
+<div class="gradient-hero">
+  <div
+    class="container"
+    style="max-width: 64rem"
+  >
+    <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem">
+      Medical Report Intelligence That You Can Trust
+    </h1>
+    <p
+      style="
+        font-size: 1.25rem;
+        color: #dbeafe;
+        margin-bottom: 2rem;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    >
+      AI-powered medical report analysis with hallucination control,
+      personalized explanations, and doctor verification.<br />
+      Transform complex medical reports into clear, actionable insights.
+    </p>
+    <button
+      class="btn-primary"
+      onclick="window.location.href = '/upload'"
+    >
+      Get Started - Upload Your Report
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <p style="font-size: 0.875rem; color: #bfdbfe; margin-top: 1rem">
+      ✓ Free to use ✓ Secure & Private ✓ Doctor Verified
+    </p>
+  </div>
+</div>
+
+<!-- Why Choose -->
+<div class="container">
+  <h2 class="section-title">Why Choose MedIntel AI?</h2>
+  <p class="subtitle">
+    The only medical AI system with comprehensive safety layers and human
+    verification
+  </p>
+
+  <div class="card-grid">
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #3b82f6, #8b5cf6);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fa-solid fa-clock"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        Fast & Efficient
+      </h3>
+      <p style="color: var(--gray-600)">
+        Get comprehensive analysis in minutes, not days. Save time while
+        maintaining accuracy and safety.
+      </p>
+    </div>
+
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #10b981, #14b8a6);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fas fa-user-md fa-lg"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        Doctor Verified
+      </h3>
+      <p style="color: var(--gray-600)">
+        Every important finding is reviewed by qualified medical professionals.
+      </p>
+    </div>
+
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #6366f1, #4f46e5);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fa-solid fa-book"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        Evidence-Based
+      </h3>
+      <p style="color: var(--gray-600)">
+        All interpretations backed by verified medical literature, guidelines,
+        and peer-reviewed research.
+      </p>
+    </div>
+
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #a855f7, #9333ea);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        Personalized Explanations
+      </h3>
+      <p style="color: var(--gray-600)">
+        Reports adapted to your health literacy level, age, and pre-existing
+        conditions for better understanding.
+      </p>
+    </div>
+
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #3b82f6, #2563eb);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fa-solid fa-brain"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        AI-Powered Intelligence
+      </h3>
+      <p style="color: var(--gray-600)">
+        Advanced AI analyzes your medical reports with hallucination control and
+        RAG-based grounding in verified medical sources.
+      </p>
+    </div>
+
+    <div class="advantage-card">
+      <div
+        style="
+          width: 3rem;
+          height: 3rem;
+          border-radius: 0.5rem;
+          background: linear-gradient(to right, #22c55e, #16a34a);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <i class="fa-solid fa-shield"></i>
+      </div>
+      <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem">
+        Hallucination Control
+      </h3>
+      <p style="color: var(--gray-600)">
+        Multiple safety layers ensure accurate interpretations. Every finding
+        includes confidence scores and source references.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- How It Works -->
+<div class="how-it-works">
+  <div
+    class="container"
+    style="max-width: 64rem"
+  >
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="steps-grid">
+      <div>
+        <div class="step-number">1</div>
+        <h4 style="font-weight: 600">Upload Report</h4>
+        <p style="font-size: 0.875rem; color: var(--gray-600)">
+          Paste or upload your medical report
+        </p>
+      </div>
+      <div>
+        <div class="step-number">2</div>
+        <h4 style="font-weight: 600">Add Context</h4>
+        <p style="font-size: 0.875rem; color: var(--gray-600)">
+          Provide age, conditions, literacy level
+        </p>
+      </div>
+      <div>
+        <div class="step-number">3</div>
+        <h4 style="font-weight: 600">AI Analysis</h4>
+        <p style="font-size: 0.875rem; color: var(--gray-600)">
+          RAG-based analysis with confidence scores
+        </p>
+      </div>
+      <div>
+        <div class="step-number">4</div>
+        <h4 style="font-weight: 600">Verification</h4>
+        <p style="font-size: 0.875rem; color: var(--gray-600)">
+          Doctor reviews and approves findings
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Articles -->
+<div class="container">
+  <h2 class="section-title">Health & Wellness Articles</h2>
+  <p class="subtitle">
+    Evidence-based information to help you understand and improve your health
+  </p>
+
+  <div class="articles-grid">
+    <!-- Card 1 -->
+    <div class="article-card">
+      <div class="card-header purple"></div>
+      <div class="card-content">
+        <div class="category purple">
+          <i class="fas fa-brain"></i>
+          MENTAL WELLNESS
+        </div>
+        <h3 class="title">
+          Managing Health Anxiety: Understanding Your Medical Reports
+        </h3>
+        <p class="subtitle">
+          How to interpret medical results without unnecessary worry. Tips for
+          productive doctor conversations.
+        </p>
+        <div class="meta">
+          <span>7 min read</span>
+          <a
+            href="#"
+            class="read-more"
+            >Read More →</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="article-card">
+      <div class="card-header teal"></div>
+      <div class="card-content">
+        <div class="category teal">
+          <i class="fas fa-heartbeat"></i>
+          CHRONIC DISEASE
+        </div>
+        <h3 class="title">Living Well with Chronic Conditions</h3>
+        <p class="subtitle">
+          Practical strategies for managing ongoing health conditions. Building
+          sustainable healthy habits.
+        </p>
+        <div class="meta">
+          <span>12 min read</span>
+          <a
+            href="#"
+            class="read-more"
+            >Read More →</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="article-card">
+      <div class="card-header amber"></div>
+      <div class="card-content">
+        <div class="category amber">
+          <i class="fas fa-apple-alt"></i>
+          NUTRITION
+        </div>
+        <h3 class="title">Anti-Inflammatory Diet: Science-Backed Benefits</h3>
+        <p class="subtitle">
+          How nutrition impacts chronic disease. Foods that fight inflammation
+          and support healing.
+        </p>
+        <div class="meta">
+          <span>9 min read</span>
+          <a
+            href="#"
+            class="read-more"
+            >Read More →</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Safety Features -->
+  <h2 class="section-title">Built-In Safety Features</h2>
+
+  <div class="safety-section">
+    <div class="safety-grid">
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">Hallucination Detection</div>
+          <p class="feature-desc">
+            AI outputs are continuously validated against medical knowledge
+            bases to prevent false information.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">RAG (Retrieval-Augmented Generation)</div>
+          <p class="feature-desc">
+            Every finding is grounded in verified medical sources, not AI
+            imagination.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">Confidence Scoring</div>
+          <p class="feature-desc">
+            Each finding includes explicit confidence levels (high, medium, low,
+            unclear).
+          </p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">Uncertainty Tracking</div>
+          <p class="feature-desc">
+            The system explicitly identifies what it doesn't know or needs more
+            context for.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">Source Citations</div>
+          <p class="feature-desc">
+            All interpretations reference specific medical guidelines and
+            research.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <i class="fas fa-check-circle check-circle"></i>
+        <div>
+          <div class="feature-title">Human-in-the-Loop</div>
+          <p class="feature-desc">
+            Doctor verification ensures AI findings are validated before being
+            shared.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div
+    class="container"
+    style="max-width: 64rem"
+  >
+    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem">
+      Ready to Understand Your Medical Reports?
+    </h2>
+    <p style="font-size: 1.25rem; color: #d1fae5; margin-bottom: 1.5rem">
+      Get personalized, accurate, and doctor-verified explanations in minutes
+    </p>
+    <button
+      class="btn-primary"
+      style="background: white; color: var(--emerald-600)"
+      onclick="window.location.href = '/upload'"
+    >
+      Upload Your Report Now
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+  <strong>Important:</strong> MedIntel AI is designed to help you understand
+  medical reports, not replace professional medical advice. Always consult with
+  your healthcare provider for diagnosis, treatment decisions, and medical
+  guidance.
+</div>
+
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "base.html" %} {% block content %}
+<!-- <div class="header">
+      <h1>Modintl AI</h1>
+      <div class="nav-links">
+        <a
+          href="#"
+          class="active"
+          >Home</a
+        >
+        <a href="#">Hallucination Control</a>
+        <a href="#">About</a>  
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="success-banner">
+        <h2><i class="fas fa-check-circle"></i> Report FINALIZED!</h2>
+        <p>Your Report Successfully has been Finalized!</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <i class="fas fa-file-medical"></i>
+          <span>0</span>
+          <div>Total Findings</div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-check"></i>
+          <span>0</span>
+          <div>Approved</div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-clock"></i>
+          <span>0</span>
+          <div>Minutes</div>
+        </div>
+        <!-- <div class="stat-card">
+          <i class="fas fa-percentage"></i>
+          <span>NaN%</span>
+          <div>Accuracy</div>
+        </div> -->
+      </div>
+      <textarea
+        name="explanation"
+        id="explanation"
+        placeholder="your explanation is here"
+        style="
+          width: 100%;
+          height: 150px;
+          padding: 1rem;
+          font-size: 1rem;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          margin-bottom: 2rem;
+        "
+      >
+      </textarea>
+
+      <div
+        class="card"
+        style="margin-bottom: 2rem"
+      >
+        <h3>Report Summary</h3>
+        <div class="info-row">
+          <strong>Report Type:</strong> <span>Overall Report</span>
+        </div>
+        <div class="info-row">
+          <strong>Overall Assessment:</strong> <span>Medical Report</span>
+        </div>
+        <p style="margin-top: 1rem; color: #555">
+          <strong>Key Findings:</strong><br />
+          Analysis complete. Please review findings with your healthcare
+          provider.
+        </p>
+      </div>
+
+      <div class="safety-features">
+        <h3>AI Safety Features Applied</h3>
+        <div class="features-grid">
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i> RAG Based Grounding
+          </div>
+          <div class="feature">
+            <i class="fas fa-brain"></i> Hallucination Detection
+          </div>
+          <div class="feature">
+            <i class="fas fa-percentage"></i> Confidence Scoring
+          </div>
+          <div class="feature">
+            <i class="fas fa-user-check"></i> Human Verification
+          </div>
+          <div class="feature">
+            <i class="fas fa-user-edit"></i> Personalization
+          </div>
+          <div class="feature">
+            <i class="fas fa-exclamation-triangle"></i> Uncertainty Tracking
+          </div>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: #555">
+          Analysis: 2022-07-22, 10:25 AM • Completed: 2022-07-22, 10:30 AM
+        </p>
+      </div>
+
+      <div class="buttons">
+        <!-- <button class="btn btn-success">
+          <i class="fas fa-download"></i> Download Report
+        </button> -->
+        <button class="btn btn-primary" onclick="window.location.href='/doctor-interface'">
+          <i class="fa-regular fa-circle-check"></i> Dr Verification
+        </button>
+        <button class="btn btn-primary"
+        onclick="window.location.href='/'">
+          <i class="fas fa-home"></i> Return to Home
+        </button>
+      </div>
+
+      <div class="footer-note">
+        This report was generated using multiple safety layers and doctor
+        verification.<br />
+        For questions or concerns, please consult a healthcare professional.
+      </div>
+    </div>
+
+    <script>
+      // Just for small animation effect on load
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".status-fill").forEach((bar) => {
+          setTimeout(() => {
+            bar.style.width =
+              bar.parentElement.previousElementSibling.querySelector("span")
+                .textContent === "0"
+                ? "0%"
+                : "100%";
+          }, 600);
+        });
+      });
+    </script>
+    {% endblock %}
